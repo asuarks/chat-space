@@ -18,7 +18,18 @@
       background-color: #d8d8d8;
       margin: auto; 
       justify-content: space-between;
+      display: flex;
     }
+
+      .top-items__name {
+        text-align: center;
+        line-height: 20px;
+      }
+
+      .top-items__icons {
+        width: 60px;         background-color: #b4b4b4;
+        justify-content: space-between;
+      }
 
   .side-bar__group-list {
     height: calc(100vh - 100px);

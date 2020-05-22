@@ -4,5 +4,8 @@
       .top-items__name
         name
       .top-items__icons
-        item
+        = link_to root_path do
+          = icon('fa', 'edit')
+        = link_to root_path do
+          = icon('fa', 'cog')
   .side-bar__group-list

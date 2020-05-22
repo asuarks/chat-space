@@ -9,7 +9,16 @@
     height: 100px;
     width: 300px;
     background-color: #253141;
+    display: flex;
   }
+
+    .top-items {
+      height: 20px;
+      width: 260px;
+      background-color: #d8d8d8;
+      margin: auto; 
+      justify-content: space-between;
+    }
 
   .side-bar__group-list {
     height: calc(100vh - 100px);

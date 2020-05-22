@@ -27,11 +27,22 @@
       }
 
       .top-items__icons {
-        // text-align-last: right;
+        text-align-last: right;
         line-height: 20px;
         width: 60px;         background-color: #b4b4b4;
         justify-content: space-between;
       }
+
+        .edit__btn {
+          text-decoration:none;
+          color: #ffffff;
+        }
+
+        .cog__btn {
+          text-decoration:none;
+          color: #ffffff;
+          margin-left: 5px;
+        }
 
   .side-bar__group-list {
     height: calc(100vh - 100px);

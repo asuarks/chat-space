@@ -4,8 +4,10 @@
       .top-items__name
         name
       .top-items__icons
-        = link_to root_path do
+        = link_to root_path, class: "edit__btn" do
           = icon('fa', 'edit')
-        = link_to root_path do
+          %span<>
+        = link_to root_path, class: "cog__btn"do
           = icon('fa', 'cog')
+          %span<>
   .side-bar__group-list

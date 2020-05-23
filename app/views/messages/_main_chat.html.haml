@@ -1,4 +1,12 @@
 .chat-main
   .chat-main__group-info
+    .chat-main__group-info__left
+      .chat-main__group-info__left__name
+        test
+      .chat-main__group-info__left__member
+        Member：testさん
+    .chat-main__group-info__icon
+      = link_to root_path, class: "chat-main__group-info__icon__edit" do
+        Edit
   .chat-main__message-list
   .chat-main__message-form

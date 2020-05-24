@@ -29,7 +29,6 @@
       }
     }
   }
-}
         .edit__btn {
           text-decoration:none;
           color: white;
@@ -40,30 +39,28 @@
           margin-left: 5px;
         }
 
-  .side-bar__group-list {
+  &__group-list {
     height: calc(100vh - 100px);
     width: 300px;
     background-color: #2f3e51;
-  }
-
-    .bottom-groups {
+    &__bottom-groups {
       height: 91px;
       width: 300px;
       color: white;
-    }
-
-      .bottom-groups__name {
+      &__name {
         height: 15px;
         width: 260px;
         margin: 0 auto;
         padding-top: 20px;
         font-size: 15px; 
       }
-
-      .bottom-groups__message {
+      &__message {
         height: 11px;
         width: 260px;
         margin: 0 auto;
         padding-top: 25px;
         font-size: 11px;
       }
+    }
+  }
+}

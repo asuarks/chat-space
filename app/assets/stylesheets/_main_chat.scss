@@ -3,31 +3,24 @@
   width: calc(100% - 300px);
   background-color: white;
   float: right;
-}
-
-  .chat-main__group-info {
+  &__group-info {
     height: 100px;
     width: calc(100vw - 300px);
     background-color: white;
     display: flex;
-  }
-
-    .chat-main__group-info__left {
+    &__left {
       width: 100%;
-    }
-
-      .chat-main__group-info__left__name {
+      &__name {
         font-size: 20px;
         padding: 35px 0px 15px 40px;
       }
-
-      .chat-main__group-info__left__member {
+      &__member {
         color: #999999;
         font-size: 12px;
         padding-left: 40px;
       }
-
-    .chat-main__group-info__icon {
+    }
+    &__icon {
       justify-content: flex-end;
       height: 40px;
       width: 72px;
@@ -37,13 +30,13 @@
       font-size: 16px;
       line-height: 40px;
       border: 1px solid;
-    }
-
-      .chat-main__group-info__icon__edit {
+      &__edit {
         text-decoration:none;
         color: #38aef0;
       }
-
+    }
+  }
+}
 
   .chat-main__message-list {
     height: calc(100vh - 190px);

@@ -82,7 +82,7 @@
     padding: 20px 40px;
 
     form {
-      
+      display: flex;
       .input-box {
           
         &__text {
@@ -93,8 +93,10 @@
           padding-left: 10px;
           display: flex;
         }
-
         &__image {
+          &__file {
+            display: none;
+          }
         }
       }
 

@@ -75,18 +75,17 @@
     }
 
 
-  .chat-main__message-form {
+  .message-form {
     height: 90px;
     width: calc(100vw - 300px);
     background-color: #d2d2d2;
     padding: 20px 40px;
-  }
 
-    .chat-main__message-form__box {
+    &__box {
       display: flex;
     }
 
-      .chat-main__message-form__box__text {
+      &__box__text {
         height: 50px;
         width: calc(100% - 115px);
         background-color: #ffffff;
@@ -95,11 +94,11 @@
         display: flex;
       }
 
-      .chat-main__message-form__box__image {
+      &__box__image {
         
       }
 
-    .chat-main__message-form__send {
+    &__send {
       height: 50px;
       width: 100px;
       background-color: #38aef0;;
@@ -112,3 +111,4 @@
         text-decoration:none;
         color: #ffffff;
       }
+  }

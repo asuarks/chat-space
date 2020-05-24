@@ -5,15 +5,15 @@
   float: right;
   &__group-info {
     height: 100px;
-    background-color: white;
     padding: 0 40px;
     display: flex;
-    border-bottom: solid 1px #eee;
+    border-bottom: solid 1px #eeeeee;
     &__left {
       width: 100%;
       &__name {
         font-size: 20px;
-        padding: 35px 0px 15px;
+        padding: 35px 0 0 0;
+        margin-bottom: 15px;
       }
       &__member {
         color: #999999;
@@ -21,15 +21,14 @@
       }
     }
     &__icon {
-      justify-content: flex-end;
       height: 40px;
-      width: 72px;
-      color: #38aef0;
-      margin: 30px 0px 40px;
-      padding: 0px 20px;
-      font-size: 16px;
       line-height: 40px;
+      padding: 0px 20px;
+      margin-top: 30px;
+      color: #38aef0;
+      font-size: 16px;
       border: 1px solid;
+      justify-content: flex-end;
       &__edit {
         text-decoration:none;
         color: #38aef0;
@@ -38,7 +37,7 @@
   }
 
 
-  &__message-list {
+  &__messages {
     height: calc(100vh - 190px);
     width: calc(100vw - 300px);
     background-color: #fafafa;
@@ -54,7 +53,7 @@
       &__time {
         font-size: 12px;
         color: #999999;
-        margin-left: 12px;
+        margin-left: 10px;
       }
     }
     &__message {

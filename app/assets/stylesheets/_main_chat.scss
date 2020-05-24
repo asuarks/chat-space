@@ -95,20 +95,20 @@
         display: flex;
       }
 
-        .chat-main__message-form__box__text__image {
-          
-        }
+      .chat-main__message-form__box__image {
+        
+      }
 
-          .chat-main__message-form__box__text__image__send {
-            height: 50px;
-            width: 100px;
-            background-color: #38aef0;;
-            text-align: center;
-            line-height: 50px;
-            margin-left: 15px;
-          }
+    .chat-main__message-form__send {
+      height: 50px;
+      width: 100px;
+      background-color: #38aef0;;
+      text-align: center;
+      line-height: 50px;
+      margin-left: 15px;
+    }
 
-            .send__btn {
-              text-decoration:none;
-              color: #ffffff;
-            }
+      .send__btn {
+        text-decoration:none;
+        color: #ffffff;
+      }

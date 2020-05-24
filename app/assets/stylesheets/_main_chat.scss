@@ -10,9 +10,9 @@
     border-bottom: solid 1px #eeeeee;
     &__left {
       width: 100%;
+      margin-top: 35px;
       &__name {
         font-size: 20px;
-        padding: 35px 0 0 0;
         margin-bottom: 15px;
       }
       &__member {
@@ -39,10 +39,10 @@
 
   &__messages {
     height: calc(100vh - 190px);
-    width: calc(100vw - 300px);
+    padding: 35px 40px;
     background-color: #fafafa;
-    padding: 35px 0px 0px 40px;
-    &__box {
+    overflow: scroll;
+    &__up {
       display: flex;
       margin-bottom: 12px;
       &__title {
@@ -79,6 +79,7 @@
           height: 50px;
           width: 100%;
           padding: 0 40px 0 10px;
+          border-style: none;
         }
         &__image {
           position: absolute;

@@ -4,10 +4,10 @@
       .side-bar__user-name__top-items__name
         name
       .side-bar__user-name__top-items__icons
-        = link_to root_path, class: "edit__btn" do
+        = link_to root_path, class: "side-bar__user-name__top-items__icons__new-btn" do
           = icon('fa', 'edit')
           %span<>
-        = link_to root_path, class: "cog__btn"do
+        = link_to root_path, class: "side-bar__user-name__top-items__icons__edit-btn" do
           = icon('fa', 'cog')
           %span<>
   .side-bar__group-list

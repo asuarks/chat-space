@@ -26,18 +26,19 @@
         line-height: 20px;
         width: 60px;
         justify-content: space-between;
-      }
-    }
-  }
-        .edit__btn {
+
+        &__new-btn {
           text-decoration:none;
           color: white;
         }
-        .cog__btn {
+        &__edit-btn {
           text-decoration:none;
           color: white;
           margin-left: 5px;
         }
+      }
+    }
+  }
 
   &__group-list {
     height: calc(100vh - 100px);

@@ -36,37 +36,34 @@
       }
     }
   }
-}
 
-  .chat-main__message-list {
+
+  &__message-list {
     height: calc(100vh - 190px);
     width: calc(100vw - 300px);
     background-color: #fafafa;
     padding: 35px 0px 0px 40px;
-  }
-    .chat-main__message-list__box {
+    &__box {
       display: flex;
       margin-bottom: 12px;
-    }
-
-      .chat-main__message-list__box__title {
+      &__title {
         font-size: 16px;
         color: #333333;
         font-weight: bold;
       }
-
-      .chat-main__message-list__box__title__time {
+      &__time {
         font-size: 12px;
         color: #999999;
         margin-left: 12px;
       }
-
-    .chat-main__message-list__box__message {
+    }
+    &__message {
       font-size: 14px;
       color: #434A54;
       padding-bottom: 46px;
     }
-
+  }
+}
 
   .form {
     height: 90px;

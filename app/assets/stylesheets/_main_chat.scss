@@ -81,30 +81,32 @@
     background-color: #d2d2d2;
     padding: 20px 40px;
 
-      &_text {
-        height: 50px;
-        width: calc(100% - 115px);
-        background-color: #ffffff;
-        line-height: 50px;
-        padding-left: 10px;
-        display: flex;
+    form {
+      
+      .input-box {
+          
+        &__text {
+          height: 50px;
+          width: calc(100% - 115px);
+          background-color: #ffffff;
+          line-height: 50px;
+          padding-left: 10px;
+          display: flex;
+        }
+
+        &__image {
+        }
       }
 
-      &__image {
-        
-      }
-
-    &__send {
-      height: 50px;
-      width: 100px;
-      background-color: #38aef0;;
-      text-align: center;
-      line-height: 50px;
-      margin-left: 15px;
-    }
 
       .submit-btn {
-        // text-decoration:none;
-        // color: #ffffff;
+        height: 50px;
+        width: 100px;
+        background-color: #38aef0;
+        color: #ffffff;
+        text-align: center;
+        line-height: 50px;
+        margin-left: 15px;
       }
+    }
   }

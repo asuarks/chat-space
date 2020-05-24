@@ -1,22 +1,20 @@
 .side-bar {
-  height: 100vh;
   width: 300px;
   background-color: #253141;
   float: left;
+  color: white;
   &__user-name {
     height: 100px;
-    width: 300px;
     background-color: #253141;
+    padding: 0 20px;
     display: flex;
     &__top-items {
-      height: 20px;
-      width: 260px;
-      margin: auto; 
+      width: 100%;
+      margin: auto;
       justify-content: space-between;
       display: flex;
-      color: white;
-      font-weight: bold;
       font-size: 16px;
+      font-weight: bold;
       &__name {
         text-align: center;
         line-height: 20px;
@@ -26,7 +24,6 @@
         line-height: 20px;
         width: 60px;
         justify-content: space-between;
-
         &__new-btn {
           text-decoration:none;
           color: white;
@@ -42,24 +39,15 @@
 
   &__group-list {
     height: calc(100vh - 100px);
-    width: 300px;
     background-color: #2f3e51;
+    padding: 20px 20px 0px;
     &__bottom-groups {
-      height: 91px;
-      width: 300px;
-      color: white;
+      margin-bottom: 40px;
       &__name {
-        height: 15px;
-        width: 260px;
-        margin: 0 auto;
-        padding-top: 20px;
-        font-size: 15px; 
+        font-size: 15px;
+        margin-bottom: 5px;
       }
       &__message {
-        height: 11px;
-        width: 260px;
-        margin: 0 auto;
-        padding-top: 25px;
         font-size: 11px;
       }
     }

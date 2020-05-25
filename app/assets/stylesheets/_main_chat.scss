@@ -1,3 +1,10 @@
+.chat-main__messages::-webkit-scrollbar {
+  display: none;
+}
+.chat-main__group-info::-webkit-scrollbar {
+  display: none;
+}
+
 .chat-main {
   height: 100vh;
   width: calc(100% - 300px);
@@ -8,6 +15,7 @@
     padding: 0 40px;
     display: flex;
     border-bottom: solid 1px #eeeeee;
+    overflow: scroll;
     &__left {
       width: 100%;
       margin-top: 35px;
@@ -36,30 +44,31 @@
     }
   }
 
-
   &__messages {
     height: calc(100vh - 190px);
     padding: 35px 40px;
     background-color: #fafafa;
     overflow: scroll;
-    &__up {
-      display: flex;
-      margin-bottom: 12px;
-      &__title {
-        font-size: 16px;
-        color: #333333;
-        font-weight: bold;
-      }
-      &__time {
-        font-size: 12px;
-        color: #999999;
-        margin-left: 10px;
-      }
-    }
-    &__message {
-      font-size: 14px;
-      color: #434A54;
+    &__box {
       padding-bottom: 46px;
+      &__up {
+        display: flex;
+        margin-bottom: 12px;
+        &__title {
+          font-size: 16px;
+          color: #333333;
+          font-weight: bold;
+        }
+        &__time {
+          font-size: 12px;
+          color: #999999;
+          margin-left: 10px;
+        }
+      }
+      &__message {
+        font-size: 14px;
+        color: #434A54;
+      }
     }
   }
 }
@@ -68,7 +77,6 @@
     height: 90px;
     background-color: #d2d2d2;
     padding: 20px 40px;
-
     form {
       display: flex;
       .input-box {

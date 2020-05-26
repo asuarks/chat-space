@@ -12,8 +12,10 @@
           %span<>
 
   .side-bar__group-list
-    .side-bar__group-list__bottom-groups
-      .side-bar__group-list__bottom-groups__name
-        techcamp
-      .side-bar__group-list__bottom-groups__message
-        まだメッセージがありません
+    - current_user.groups.each do |group|
+      .side-bar__group-list__bottom-groups
+        = link_to '#' do
+          .side-bar__group-list__bottom-groups__name
+            = group.name
+          .side-bar__group-list__bottom-groups__message
+            まだメッセージがありません

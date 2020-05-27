@@ -3,8 +3,12 @@
     .chat-main__group-info__left
       .chat-main__group-info__left__name
         test
+        = @group.name
       .chat-main__group-info__left__member
-        Member：testさん
+        Member：
+        .chat-main__group-info__left__member-list
+          - @group.users.each do |user|
+            = user.name
     .chat-main__group-info__icon
       = link_to "#", class: "chat-main__group-info__icon__edit" do
         Edit

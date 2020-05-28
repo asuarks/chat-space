@@ -1,44 +1,40 @@
 require 'rails_helper'
 
 RSpec.describe Message, type: :model do
-    describe '#create' do
+  describe '#create' do
+    
+    context 'messageを保存できる場合' do
+      it 'contentがあれば保存できること' do
+        expect(build(:message, image: nil)).to be_valid
+      end
 
-  # メッセージを保存できる場合
-    it "メッセージがあれば保存できること" do
-      message = build(:message, content: "test")
-      message.valid?
-      expect(message).to be_valid
+      it 'imageがあれば保存できること' do
+        expect(build(:message, content: nil)).to be_valid
+      end
+
+      it 'content と imageがあれば保存できること' do
+        expect(build(:message)).to be_valid
+      end
     end
 
-    it "画像があれば保存できること" do
-      message = build(:message, image: "images.test_image.jpg")
-      message.valid?
-      expect(message).to be_valid
-    end
+    context 'messageを保存できない場合' do
+      it ' content と imageが両方空だと保存できないこと' do
+        message = build(:message, content: nil, image: nil)
+        message.valid?
+        expect(message.errors[:content]).to include("を入力してください")
+      end
 
-    it "メッセージと画像があれば保存できること" do
-      message = build(:message, content: "test", image: "images.test_image.jpg")
-      message.valid?
-      expect(message).to be_valid
-    end
+      it 'group_idが無いと保存できないこと' do
+        message = build(:message, group_id: nil)
+        message.valid?
+        expect(message.errors[:group]).to include("を入力してください")
+      end
 
-    # メッセージを保存できない場合
-    it "メッセージも画像も無いと保存できないこと" do
-      message = build(:message, content: "", image: "")
-      message.valid?
-      expect(message.errors[:content]).to include("を入力してください")
-    end
-
-    it "group_idが無いと保存できないこと" do
-      message = build(:group, id: "")
-      message.valid?
-      expect(group.errors[:id]).to include("can't be blank")
-    end
-
-    it "user_idが無いと保存できないこと" do
-      message = build(:user, id: "")
-      message.valid?
-      expect(user.errors[:id]).to include("can't be blank")
+      it ' user_idが無いと保存できないこと' do
+        message = build(:message, user_id: nil)
+        message.valid?
+        expect(message.errors[:user]).to include("を入力してください")
+      end
     end
     
   end

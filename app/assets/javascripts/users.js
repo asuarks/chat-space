@@ -1,14 +1,30 @@
 $(function(){
+  function addUser(user) {
+    let html = `
+      <div class="chat-group-user clearfix">
+        <p class="chat-group-user__name">${user.name}</p>
+        <div class="user-search-add chat-group-user__btn chat-group-user__btn--add" data-user-id="${user.id}" data-user-name="${user.name}">追加</div>
+      </div>
+    `
+  }
+  function addNoUser() {
+    let html = `
+      <div class="chat-group-user clearfix">
+        <p class="chat-group-user__name">ユーザーが見つかりません</p>
+      </div>
+    `
+  }
+
   $("#user-search-field").on("keyup", function(){
-    let input = $("#user-search-field").val();    //フォームの値を取得して変数に代入する
+    let input = $("#user-search-field").val();
     $.ajax({
-      type: "GET",    //HTTPメソッド
-      url: "/users",  //users_controllerの、indexアクションにリクエストの送信先を設定する
+      type: "GET",
+      url: "/users",
       dataType: "json",
-      data: { keyword: input }    //テキストフィールドに入力された文字を設定する
+      data: { keyword: input }
     })
       .done(function(users) {
-        console.log("成功です");
+        console.log(users);
       })
       .fail(function() {
         console.log("失敗です");

@@ -17,6 +17,10 @@ $(function(){
     $("#user-search-result").append(html);
   }
 
+$(document).on('click', ".chat-group-user__btn--add", function(){
+  console.log("イベント発火成功")
+});
+
   $("#user-search-field").on("keyup", function(){
     let input = $("#user-search-field").val();
     $.ajax({

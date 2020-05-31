@@ -7,7 +7,6 @@ $(function(){
       </div>
     `;
     $("#user-search-result").append(html);
-    console.log(html)
   }
   function addNoUser() {
     let html = `
@@ -40,7 +39,7 @@ $(function(){
         }
       })
       .fail(function() {
-        console.log("失敗です");
+        alert("通信エラーです。ユーザーが表示できません。");
       });
   });
 });

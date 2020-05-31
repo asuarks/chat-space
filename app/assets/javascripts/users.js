@@ -24,7 +24,17 @@ $(function(){
       data: { keyword: input }
     })
       .done(function(users) {
-        console.log(users);
+        $("#user-search-result").empty(); //emptyメソッドで一度検索結果を空にする
+
+        if (users.length !== 0) {        //usersが空かどうかで条件分岐
+          users.forEach(function(user) { //配列オブジェクト１つ１つに対する処理
+            addUser(user);               //引数に値が入っていた場合に、ビューに追加するためのHTMLを作成
+          });
+        } else if (input.length == 0) {
+          return false;
+        } else {
+          addNoUser();
+        }
       })
       .fail(function() {
         console.log("失敗です");

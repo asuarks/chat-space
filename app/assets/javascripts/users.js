@@ -17,9 +17,10 @@ $(function(){
     $("#user-search-result").append(html);
   }
 
-$(document).on('click', ".chat-group-user__btn--add", function(){
-  console.log("イベント発火成功")
-});
+  function addMember(userId) {
+    let html = `<input value="${userId}" name="group[user_ids][]" type="hidden" id="group_user_ids_${userId}" />`;
+    $(`#${userId}`).append(html);
+  }
 
   $("#user-search-field").on("keyup", function(){
     let input = $("#user-search-field").val();
@@ -45,5 +46,14 @@ $(document).on('click', ".chat-group-user__btn--add", function(){
       .fail(function() {
         alert("通信エラーです。ユーザーが表示できません。");
       });
+  });
+  $(document).on("click", ".chat-group-user__btn--add", function(){
+    console.log
+    const userName = $(this).attr("data-user-name");
+    const userId = $(this).attr("data-user-id");
+    $(this)
+    .parent()
+    .remove();
+  addMember(userId);
   });
 });

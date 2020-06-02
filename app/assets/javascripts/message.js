@@ -92,5 +92,5 @@ $("#new_message").on("submit", function(e){
         alert('error');
       });
     };
-
+    setInterval(reloadMessages, 7000);
 });

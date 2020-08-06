@@ -1,12 +1,21 @@
-## Overview
+# Overview
 
 ## 🌐 App URL
+http://18.180.203.11/
 
 ## Test Account
+- Eメール：test@test
+- パスワード：test@test
 
 ## Environment
+- Ruby on Rails
+- Haml/Sass
+- Javascript/jQuery
+- データベースはMySQLを使用
+- デプロイはAWSで実施
 
 ## Function
+
 
 # ChatSpace DB設計
 

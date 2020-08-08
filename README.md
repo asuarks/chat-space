@@ -16,10 +16,20 @@ http://18.180.203.11/
 
 ## Function
 - ログイン機能
+<img src="https://user-images.githubusercontent.com/65595354/82827293-b20d3500-9ee9-11ea-968a-9c13765a22a5.png">
+
 - グループ新規作成・編集機能
+<img src="">
+
 - チャット送信機能(非同期通信)
+<img src="">
+
 - ユーザーのインクリメンタルサーチ機能
+<img src="">
+
 - チャット自動更新機能
+<img src="">
+
 
 # ChatSpace DB設計
 

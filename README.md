@@ -17,6 +17,7 @@ http://18.180.203.11/
 ## Function
 ### 1. ログイン機能
 <img src="https://user-images.githubusercontent.com/65595354/82827293-b20d3500-9ee9-11ea-968a-9c13765a22a5.png">
+- ログイン画面するとチャットができるようになる。
 
 ### 2. グループ新規作成・編集機能
 <!-- <img src=""> -->

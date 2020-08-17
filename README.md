@@ -28,6 +28,7 @@ http://18.180.203.11/
 
 ### 4. ユーザーのインクリメンタルサーチ機能
 <img src="https://user-images.githubusercontent.com/65595354/83431958-1e041600-a473-11ea-9ad0-613b4782dbc2.png">
+- チャットメンバーを非同期で検索して選択・追加できる。
 
 ### 5. チャット自動更新機能
 <img src="https://user-images.githubusercontent.com/65595354/83490635-5b0bef00-a4eb-11ea-951a-146ee15ac7ae.gif">
